@@ -3,20 +3,24 @@ body {
 }
 
 .row {
-    padding: 5px;
+    margin: 15px;
     text-align: center;
+}
+
+#affichage {
+    font-family: Impact;
+    font-size: 1.5em;
 }
 
 #bouton {
     box-shadow: none;
     border: none;
     background-color: #fff;
-    padding: 15px;
+
 }
 
-.bigbutton {
-    height:2em;
-    width:2em;
+#cookie {
+    margin:25px;
 }
 
 #multiplicateur, #autoclic {
