@@ -6,12 +6,12 @@ var bouton = document.getElementById('bouton'),
     compteur = 1,
     autoclic = document.getElementById('autoclic'),
     compteurAutoclic = 0;
-    
+
 function afficherScore() {
     if (score <= 1) {
-        affichage.innerHTML = "Score : "+score+" cookie";
+        affichage.innerHTML = "SCORE : "+score+" COOKIE";
     } else {
-        affichage.innerHTML = "Score : "+score+" cookies";
+        affichage.innerHTML = "SCORE : "+score+" COOKIES";
     }
 }
 
@@ -19,11 +19,17 @@ function afficherCompteur() {
     multiplicateur.innerHTML = "Multiplicateur x"+compteur+" (prix du prochain : "+prix()+" cookies)";
 }
 
+function reduireCookie() {
+    cookie.style.width = 150;
+    cookie.style.margin = 25;
+}
+
 function clic() {
-    cookie.style.width = 200 ;
+    cookie.style.width = 160;
+    cookie.style.margin = 20;
+    setTimeout(reduireCookie, 100);
     score = score+compteur;
     afficherScore();
-    cookie.style.width = 150 ;
 }
 
 function prix() {
@@ -52,8 +58,8 @@ function acheterAutoclic() {
     }
 }
 
-bouton.onclick = clic;
-multiplicateur.onclick = acheterMultiplicateur;
+bouton.addEventListener('click', clic, false)
 afficherScore();
 afficherCompteur();
-autoclic.onclick = acheterAutoclic;
+autoclic.addEventListener('click', acheterAutoclic, false)
+multiplicateur.addEventListener('click', acheterMultiplicateur, false)
