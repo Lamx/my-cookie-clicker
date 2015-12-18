@@ -1,0 +1,25 @@
+body {
+    background-color: #fff;
+}
+
+.row {
+    padding: 5px;
+    text-align: center;
+}
+
+#bouton {
+    box-shadow: none;
+    border: none;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.bigbutton {
+    height:2em;
+    width:2em;
+}
+
+#multiplicateur, #autoclic {
+    background-color: #ccc;
+    margin: 5px;
+}

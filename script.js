@@ -1,4 +1,5 @@
 var bouton = document.getElementById('bouton'),
+    cookie = document.getElementById('cookie'),
     affichage = document.getElementById('affichage'),
     score = 0,
     multiplicateur = document.getElementById('multiplicateur'),
@@ -19,8 +20,10 @@ function afficherCompteur() {
 }
 
 function clic() {
+    cookie.style.width = 200 ;
     score = score+compteur;
     afficherScore();
+    cookie.style.width = 150 ;
 }
 
 function prix() {

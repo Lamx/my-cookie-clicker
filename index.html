@@ -6,15 +6,36 @@
         <meta charset="UTF-8">
         <script type="text/javascript"></script>
         <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     </head>
 
     <body>
 
-        <button id="bouton"><img src="oreo" /></button>
-        <button id="multiplicateur">Multiplicateur x1 (prix du prochain : 20 cookies)</button>
-        <button id="autoclic">Autoclic</button>
+        <div class="container-fluid">
         
-        <div id="affichage">0 cookie</div>
+            <div class="row">
+                
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <button id="bouton"><img src="cookie.png" alt="cookie_clicker" id="cookie" style="width:150px;"></button>
+                </div>
+            
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <button id="multiplicateur">Multiplicateur x1 (prix du prochain : 20 cookies)</button>
+                    <button id="autoclic">Autoclic (prix : 200 cookies)</button>
+                </div>
+            
+            </div>
+            
+            <div class="row">
+                       
+                <div>
+                    <div id="affichage">0 cookie</div>
+                </div>
+            
+            </div>
+            
+        </div>
         
         <script src="script.js"></script>
         
